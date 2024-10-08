@@ -1,4 +1,5 @@
-import os
+import config
+config.os.system('clear')
 # Esto es un comentario... 
 print("Hola Mundo!")
 print("Hola Python!")
@@ -29,4 +30,4 @@ valor_final = costo_servicio + costo_servicio_iva + costo_servicio_pais + costo_
 print("El valor final a pagar es: ", valor_final)
 
 input("\nPresione Enter para volver al menú principal ...")
-os.system('python3 app.py')
+exit()

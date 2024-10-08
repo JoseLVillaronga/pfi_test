@@ -1,5 +1,5 @@
-import os
-
+import config
+config.os.system('clear')
 kelvin_celsius = 273 # Valor utilizado para convertir de Kelvin a Celsius
 #puedo definir alguna variable que me ayude a la conversion???
 
@@ -14,4 +14,4 @@ print("El valor de la temperatura expresada en Kelvin es: ", temperatura_k)
 print("El valor de la temperatura expresada en Farenheith es: ", temperatura_f)
 
 input("\nPresione Enter para volver al menú principal ...")
-os.system('python3 app.py')
+exit()
