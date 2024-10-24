@@ -13,6 +13,7 @@ for doc in documentos:
     print("IVA: ",doc["iva"])
     print("Ganancia: ",doc["ganancia"])
     print("Cantidad: ",doc["cantidad"])
+    print("Código: ",doc["codigo"])
     print("ID: ",doc["_id"])
 
 input("\nPresione Enter para volver al menú principal ...")
