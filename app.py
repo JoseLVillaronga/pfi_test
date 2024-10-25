@@ -4,7 +4,7 @@ from src import funciones
 config.os.system('clear')
 
 user=str(input("Ingresar usuario: "))
-contra=input("Ingresar contraseña: ")
+contra=config.getpass.getpass("Ingresar contraseña: ")
 
 config.loguinMain(user,contra)
 
