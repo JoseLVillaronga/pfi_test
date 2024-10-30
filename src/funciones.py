@@ -1,42 +1,48 @@
 import os
 import time
+
 def mostrar_menu():
-    print("\nIngrese la opción del menu correspondiente:\n")
-    print("1- Ejercicio de la clase 02")
-    print("2- Ejercicio de la clase 03")
-    print("3- Consulta Productos")
-    print("4- Alta producto")
-    print("5- Suma producto")
-    print("6- Resta producto")
-    print("7- Baja producto")
-    print("8- Salir de la aplicación")
+   # Lista de opciones 
+    options = [
+        "\nIngrese la opción del menu correspondiente:\n",
+        "1.- Consulta Productos",
+        "2.- Alta producto",
+        "3.- Suma producto",
+        "4.- Resta producto",
+        "5.- Baja producto",
+        "6.- Salir de la aplicación\n\n"
+    ]
+   # Imprime lista de opciones 
+    for option in options:
+        print(option) 
 
 def ejecutar_opcion(opcion):
     if (opcion == '1'):
-        os.system('python3 src/ejercicio_clase02.py')
-        os.system('clear')
-    elif (opcion == '2'):
-        os.system('python3 src/ejercicio_clase03.py')
-        os.system('clear')
-    elif (opcion == '3'):
+        # Muestra listado de articulos 
         os.system('python3 src/consulta_test.py')
         os.system('clear')
-    elif (opcion == '4'):
+    elif (opcion == '2'):
+        # Alta de producto 
         os.system('python3 src/consulta_add.py')
         os.system('clear')
-    elif (opcion == '5'):
+    elif (opcion == '3'):
+        # Agrega stock 
         os.system('python3 src/consulta_sum.py')
         os.system('clear')
-    elif (opcion == '6'):
+    elif (opcion == '4'):
+        # Retira stock 
         os.system('python3 src/consulta_res.py')
         os.system('clear')
-    elif (opcion == '7'):
+    elif (opcion == '5'):
+        # Baja de producto 
         os.system('python3 src/consulta_baja.py')
         os.system('clear')
-    elif (opcion == '8'):
+    elif (opcion == '6'):
+        # Sale del sistema 
         print("By by ...")
         exit()
     else:
+        # Opción no valida 
         print("\n\nOpción no válida. Intente de nuevo.")
         time.sleep(2)
         os.system('clear')

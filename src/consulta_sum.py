@@ -13,7 +13,7 @@ cantidad = int(input("Cantidad a sumar: "))
 
 i = 0
 
-while cantidad < 0:
+while cantidad < 1:
     if (i > 2):
         print("Supero a cantidad de intentos ...")
         config.time.sleep(2)

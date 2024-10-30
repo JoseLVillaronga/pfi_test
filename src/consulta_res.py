@@ -13,7 +13,8 @@ cantidad = int(input("Cantidad a restar: "))
 producto = collection.find_one({"codigo": codigo})
 
 i = 0
-while cantidad < 0:
+
+while cantidad < 1:
     if (i > 2):
         print("Supero la cantidad de intentos ...")
         config.time.sleep(2)
