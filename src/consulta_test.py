@@ -27,7 +27,7 @@ for doc in documentos:
     # Paginador: al llegar al 4to valor del contador pausa el bucle for hasta que se preciona una tecla y resetea el contador para volver a mostrar los proximos 4 items de la lista de productos  
     if indexx == 3:
         input("\nPresione Enter para ver nueva página ...")
-        indexx = 0
+        indexx = -1
         config.os.system('clear')
         print('Consulta de Productos ...\n\n')
     
